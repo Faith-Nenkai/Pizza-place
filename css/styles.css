@@ -1,0 +1,12 @@
+nav img{
+  height: 200px;
+  width: 450px;
+  border-radius: 5%;
+}
+nav ul{
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  padding-right: 3%;
+}
