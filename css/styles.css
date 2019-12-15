@@ -25,3 +25,10 @@ header{
   padding-bottom: 5%;
   font-family: 'Playfair Display', serif;;
 }
+.gallery img{
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  margin: 2%;
+  border-radius: 5%;
+}
