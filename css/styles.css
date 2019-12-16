@@ -32,3 +32,55 @@ header{
   margin: 2%;
   border-radius: 5%;
 }
+.contact-us{
+  background-image: url("https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+}
+.contact-us>h1{
+  font-size: 32px;
+  padding-top: 3%;
+}
+input{
+  background-color: transparent;
+  width: 400px;
+  z-index: 1;
+  margin: 3%;
+  border: white solid 1px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+
+}
+input::placeholder{
+color: #fff;
+z-index: 1;
+}
+
+textarea{
+  background-color: transparent;
+  height: 200px;
+  width: 67%;
+  margin-top: 0.5%;
+  margin-left: 2%;
+
+}
+
+textarea::placeholder{
+  color: #fff;
+}
+#para{
+  color: skyblue;
+}
+._icon{
+margin-top: 5%;
+}
+#copyright{
+  color: black;
+  font-weight: bold;
+  padding-top: 2%;
+}
