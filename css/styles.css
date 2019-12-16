@@ -51,7 +51,7 @@ input{
   width: 400px;
   z-index: 1;
   margin: 3%;
-  border: white solid 1px;
+  border: black solid 1px;
   margin-bottom: 1%;
   margin-top: 1%;
 
@@ -74,7 +74,7 @@ textarea::placeholder{
   color: #fff;
 }
 #para{
-  color: skyblue;
+  color: blue;
 }
 ._icon{
 margin-top: 5%;
