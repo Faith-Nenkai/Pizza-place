@@ -14,8 +14,8 @@
       src="https://images.unsplash.com/photo-1486485764572-92b96f21882a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
       alt=""></center>
   <ul>
-    <li><a href="#">HOME</a></li>
-    <li><a href="#">CONTACT US</a></li>
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="#contact">CONTACT US</a></li>
   </ul>
 </nav>
 
@@ -46,7 +46,7 @@
     </div>
 
   </div>
-  <div class="contact-us">
+  <div class="contact-us" id="contact">
     <h1>CONTACT US</h1>
     <form action="" method="post" id="form">
         <input type="text" placeholder="Name..." id="nameUser">
@@ -72,7 +72,39 @@
     <a href="http://www.youtube.com/channel/UCAENMhFzaceZJyq3BtXBMaA"> <img src="./img/you_tube.png"></a>
   </div>
   
-<center><p id="copyright">THE PEPPIZA<br> &copy;2019</p></center>  
+<center><p id="copyright">THE PEPPIZA<br> &copy;2019</p></center>
+<form name="dtls">
+  <label>Quantity <input type="number" /></label>
+  <label>Pizza Size
+      <select>
+          <option value="1">Small</option>
+          <option value="2">Medium</option>
+          <option value="3">Large</option>
+          <option value="4">Mega</option>
+      </select>
+  </label>
+  <label>Crust Type
+      <select>
+          <option value="1">Cripsy</option>
+          <option value="2">Stuffed</option>
+          <option value="3">Gluten-free</option>
+          <option value="4">Thin</option>
+          <option value="5">Flieded</option>
+      </select>
+  </label>
+  <label>Toppings
+      <select>
+          <option value="1">Mushroom</option>
+          <option value="2">Onion</option>
+          <option value="3">Extra cheese</option>
+          <option value="1">Meat</option>
+          <option value="2">Chicken tikka</option>
+          <option value="3">Pepperoni</option>
+      </select>
+  
+      
+  </label>
+</form>  
 </body>
 <script src="js/scripts.js"></script>
 <script src="js/jquery.js"></script>
