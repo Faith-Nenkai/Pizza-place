@@ -1,38 +1,46 @@
-nav img{
+nav img {
   height: 200px;
   width: 450px;
   border-radius: 5%;
 }
-nav ul{
+
+nav ul {
   text-align: center;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   padding-right: 3%;
 }
-nav>ul>li>a:hover{
-  box-shadow: 0 0 10px black,inset 0 0 1px grey;
+
+nav>ul>li>a:hover {
+  box-shadow: 0 0 10px black, inset 0 0 1px grey;
   background-color: salmon;
   color: slateblue;
 }
-nav>ul>li>a{
+
+nav>ul>li>a {
   padding: 5px;
 }
-header{
+
+header {
   text-align: center;
   background-image: url('https://images.unsplash.com/photo-1534963063257-6b65b54e438b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
   background-size: cover;
   padding-bottom: 5%;
-  font-family: 'Playfair Display', serif;;
+  font-family: 'Playfair Display', serif;
+  ;
 }
-.gallery img{
+
+.gallery img {
   height: 250px;
   width: 250px;
   display: inline-block;
   margin: 2%;
   border-radius: 5%;
 }
-.contact-us{
+
+.contact-us {
   background-image: url("https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   left: 0;
@@ -42,45 +50,54 @@ header{
   color: white;
   text-align: center;
 }
-.contact-us>h1{
+
+.contact-us>h1 {
   font-size: 32px;
   padding-top: 3%;
 }
-input{
+
+input {
   background-color: transparent;
   width: 400px;
   z-index: 1;
-  margin: 3%;
-  border: black solid 1px;
+  margin: 5%;
+  border: beige solid 1px;
   margin-bottom: 1%;
   margin-top: 1%;
-
-}
-input::placeholder{
-color: #fff;
-z-index: 1;
 }
 
-textarea{
+input::placeholder {
+  color: #fff;
+  z-index: 1;
+}
+
+textarea {
   background-color: transparent;
   height: 200px;
   width: 67%;
-  margin-top: 0.5%;
+  margin-top: 2%;
   margin-left: 2%;
 
 }
 
-textarea::placeholder{
+textarea::placeholder {
   color: #fff;
 }
-#para{
+
+#para {
   color: blue;
 }
-._icon{
-margin-top: 5%;
+
+._icon {
+  margin-top: 5%;
 }
-#copyright{
+
+#copyright {
   color: black;
   font-weight: bold;
   padding-top: 2%;
+}
+
+.gallery {
+  overflow: scroll;
 }
