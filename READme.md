@@ -17,7 +17,7 @@ Here is my github live link https://faith-nenkai.github.io/Pizza-place/
 
 ## Motivation
 To make pizza order and delivery fast and secure with pocket friendly prices.
- 
+
 ## Known Bugs
 There are no known bugs at the moment.
 

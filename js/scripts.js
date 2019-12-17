@@ -25,10 +25,10 @@ function _f(a) { return document.forms[a]; }
 function _p(a) { return a.preventDefault(); }
 
 var globVarA;
-debugger;
 _i("close").addEventListener('click', function () { this.removeEventListener('click', choose); _i('details').style.display = "none"; });
-_i("closeb").addEventListener('click', function () { this.removeEventListener('click', choose); _i('cart').style.display = "none"; });
-_i("viewCart").addEventListener('click', function () { this.removeEventListener('click', choose); _i('details').style.display = "none"; _i('cart').style.display = "block"; });
+// _i("closeb").addEventListener('click', function () { this.removeEventListener('click', choose); _i('cart').style.display = "none"; });
+ _i("buyBtn").addEventListener('click', function () { this.removeEventListener('click', choose);});
+
 _f('details').addEventListener('submit', function (e) { _p(e); })
 function btnCust() {
   var a, b, c;
@@ -43,28 +43,27 @@ function choose() {
   _i('details').style.display = "block";
   _i('detailsName').innerText = a[1].innerText;
   _i('detailsImg').src = a[0].src;
-  d = a[2].innerText.replace('price: Ksh.', '');
-  globVarA = parseInt(d.replace(' ', ''));
-  _i('detailsPrice').innerText = globVarA;
+  d = a[2].innerText
+  _i('detailsPrice').innerText = parseInt(d);
+  globVarA=parseInt(d);
   _f('details')[0].value = 1;
-  for (c = 0; c < _f('details').length; c++) { _f('details')[c].addEventListener('change', dtlChange); }
+  for (c = 0; c < _f('details').length; c++) { _f('details')[c].addEventListener('change', detailChange); }
 }
-function dtlChange() {
+function detailChange() {
   var a, b, c, d, e, f, g;
   a = parseFloat(qnty()); b = parseFloat(ram()); c = parseFloat(storage()); d = parseFloat(cpu()); e = parseFloat(display());
   _i('detailsPrice').innerText = a * (globVarA + b + c + d + e);
   f = _i('detailsPrice').innerText = a * (globVarA + b + c + d + e);
-  // _i('buyBtn').addEventListener('click', function () {
-  //   alert("Grand Tota:Ksh " + f);
-  //   if (true) {
-  //     confirm("Do you want it delivered? Remember that cost depend on location");
-  //     prompt('Enter location');
-  //     alert(' Delivery will be made soon. Thank you for using our services.');
-  //     return 0;
-  //   }
+  _i('buyBtn').addEventListener('click', function () {
+    alert("Grand Tota:Ksh " + f);
+    if (true) {
+      confirm("Do you want it delivered? Delivery fee = Ksh.50");
+      prompt('PLease enter your location');
+      alert('Your delivery will be made soon.Thank you for using our services.');
+      return 0;
+    }
 
-
-  // });
+  });
 }
 
 
