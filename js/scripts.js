@@ -17,7 +17,7 @@ function checkBlank() {
     alert("Dear " + name + "Thank you.Your feedback has been successfully submitted");
     document.getElementById('para').innerHTML = "Dear " + name + " Your feedback was successfully submitted.Thank you."
   }
-} 
+}
 function _t(a) { return document.getElementsByTagName(a); }
 function _i(a) { return document.getElementById(a); }
 function _c(a) { return document.getElementsByClassName(a); }
@@ -25,19 +25,19 @@ function _f(a) { return document.forms[a]; }
 function _p(a) { return a.preventDefault(); }
 
 var globVarA;
-
-_i("close").addEventListener('click', function () { this.removeEventListener('click', customize); _i('details').style.display = "none"; });
-_i("closeb").addEventListener('click', function () { this.removeEventListener('click', customize); _i('cart').style.display = "none"; });
-_i("viewCart").addEventListener('click', function () { this.removeEventListener('click', customize); _i('details').style.display = "none"; _i('cart').style.display = "block"; });
+debugger;
+_i("close").addEventListener('click', function () { this.removeEventListener('click', choose); _i('details').style.display = "none"; });
+_i("closeb").addEventListener('click', function () { this.removeEventListener('click', choose); _i('cart').style.display = "none"; });
+_i("viewCart").addEventListener('click', function () { this.removeEventListener('click', choose); _i('details').style.display = "none"; _i('cart').style.display = "block"; });
 _f('details').addEventListener('submit', function (e) { _p(e); })
 function btnCust() {
   var a, b, c;
   a = _t('button'); b = a.length;
   for (c = 0; c < b; c++) {
-    a[c].addEventListener('click', customize);
+    a[c].addEventListener('click', choose);
   }
 } btnCust();
-function customize() {
+function choose() {
   var a, b, c, d;
   a = this.parentNode.children;
   _i('details').style.display = "block";
@@ -54,18 +54,17 @@ function dtlChange() {
   a = parseFloat(qnty()); b = parseFloat(ram()); c = parseFloat(storage()); d = parseFloat(cpu()); e = parseFloat(display());
   _i('detailsPrice').innerText = a * (globVarA + b + c + d + e);
   f = _i('detailsPrice').innerText = a * (globVarA + b + c + d + e);
-  //alert(globVarA + 'glob' + a + 'qnty' + b + 'ram' + c + 'storage' + d + 'cpu' + e + 'display');
-  _i('buyBtn').addEventListener('click', function () {
-    alert("Grand Tota:Ksh " + f);
-    if (true) {
-      confirm("Do you want it delivered? Remember that cost depend on location");
-      prompt('Enter location');
-      alert(' Delivery will be made soon. Thank you for using our services.');
-      return 0;
-    }
+  // _i('buyBtn').addEventListener('click', function () {
+  //   alert("Grand Tota:Ksh " + f);
+  //   if (true) {
+  //     confirm("Do you want it delivered? Remember that cost depend on location");
+  //     prompt('Enter location');
+  //     alert(' Delivery will be made soon. Thank you for using our services.');
+  //     return 0;
+  //   }
 
 
-  });
+  // });
 }
 
 
@@ -117,28 +116,4 @@ function display() {
   }
 }
 
-function checkEmpty() {
-  var name = document.forms['forms'].elements[0].value;
-  var email = document.forms['forms'].elements[1].value;
-  var message = document.forms['forms'].elements[2].value;
 
-  if (name == "" && email == "") {
-    alert('please enter your details');
-    return 0;
-  }
-  else {
-    if (name == "") {
-      alert("please enter your name!");
-    }
-    else if (email == "") {
-      alert("please enter your email!");
-    }
-  }
-  if ((name !== "" && email != "" && text == "") || (name != "" && email != "" && text != "")) {
-    alert("Dear " + name + " your message was received successfully.");
-    document.getElementById('results').innerHTML = "Dear " + name + " your message was received successfully you will be contacted soon. Thank you.";
-  }
-}
-_i('conta').addEventListener('click', function () {
-  _i('contac').style.display = "block";
-});
