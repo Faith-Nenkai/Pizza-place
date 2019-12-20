@@ -39,11 +39,13 @@ header {
   margin: 2%;
   border-radius: 5%;
 }
-.gallery{
+
+.gallery {
   display: flex;
   margin-left: 5%;
 }
-.img{
+
+.img {
   margin: 1.5%;
 }
 
@@ -106,104 +108,111 @@ textarea::placeholder {
   padding-top: 2%;
 }
 
-.cont{
+.cont {
   margin-top: 2%;
 }
-#cart{
+
+#cart {
   display: none;
 }
-#details{
+
+#details {
   display: none;
-}div#details,
-div#cart ,#buy{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background:aqua;
-    display: none;
+}
+
+div#details,
+div#cart,
+#buy {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: aqua;
+  display: none;
 }
 
 button#close,
 button#closeb {
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    color: slateblue;
-    font: 900 2em sans-serif;
-    border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: slateblue;
+  font: 900 2em sans-serif;
+  border-radius: 50%;
 }
 
-div#details>div,#buy>div {
-    background: #25bbe9;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 960px;
-    margin: auto;
-    padding: 3px 7px;
-    border-radius: 0px 0px 7px 7px;
+div#details>div,
+#buy>div {
+  background: #25bbe9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: auto;
+  padding: 3px 7px;
+  border-radius: 0px 0px 7px 7px;
 }
 
-div#details>div>h2,#buy>div>h3 {
-    width: 98%;
+div#details>div>h2,
+#buy>div>h3 {
+  width: 98%;
 }
 
 div#details>div>div {
-    max-width: 637px;
-    padding: 3px;
+  max-width: 637px;
+  padding: 3px;
 }
 
 div#details>div>div:last-of-type {
-    min-width: calc(100% - 350px);
+  min-width: calc(100% - 350px);
 }
 
 div#details>div>div>img {
-    display: block;
-    width: 300px;
-    height: 300px;
-    background: lightblue;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background: lightblue;
 }
 
 div#details>div>div>form>label {
-    display: block;
+  display: block;
 }
 
 div#cart>div {
-    background: azure;
-    max-width: 960px;
-    margin: auto;
-    padding: 3px 7px;
-    border-radius: 0px 0px 7px 7px;
+  background: azure;
+  max-width: 960px;
+  margin: auto;
+  padding: 3px 7px;
+  border-radius: 0px 0px 7px 7px;
 }
 
 div#cart table {
-    width: 100%;
+  width: 100%;
 }
 
 div#cart table tr th {
-    border: 3px solid lightseagreen;
-    border-width: 0px 0px 3px 1px;
-    text-transform: uppercase;
-    padding: 1px 3px;
+  border: 3px solid lightseagreen;
+  border-width: 0px 0px 3px 1px;
+  text-transform: uppercase;
+  padding: 1px 3px;
 }
 
 div#cart table tr td {
-    border: 1px solid turquoise;
-    border-width: 0px 0px 1px 1px;
-    padding: 1px 3px;
+  border: 1px solid turquoise;
+  border-width: 0px 0px 1px 1px;
+  padding: 1px 3px;
 }
 
 div#cart table tr td img {
-    min-width: 28px;
-    max-width: 128px;
-    height: 56px;
-    background:aquamarine;
-    display: block;
+  min-width: 28px;
+  max-width: 128px;
+  height: 56px;
+  background: aquamarine;
+  display: block;
 }
 
 div#cart table tr td button {
-    color: powderblue;
-    font: 900 1.4em sans-serif;
+  color: powderblue;
+  font: 900 1.4em sans-serif;
 }

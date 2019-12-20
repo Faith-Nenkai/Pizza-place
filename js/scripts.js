@@ -27,7 +27,7 @@ function _p(a) { return a.preventDefault(); }
 var globVarA;
 _i("close").addEventListener('click', function () { this.removeEventListener('click', choose); _i('details').style.display = "none"; });
 // _i("closeb").addEventListener('click', function () { this.removeEventListener('click', choose); _i('cart').style.display = "none"; });
- _i("buyBtn").addEventListener('click', function () { this.removeEventListener('click', choose);});
+_i("buyBtn").addEventListener('click', function () { this.removeEventListener('click', choose); });
 
 _f('details').addEventListener('submit', function (e) { _p(e); })
 function btnCust() {
@@ -45,7 +45,7 @@ function choose() {
   _i('detailsImg').src = a[0].src;
   d = a[2].innerText
   _i('detailsPrice').innerText = parseInt(d);
-  globVarA=parseInt(d);
+  globVarA = parseInt(d);
   _f('details')[0].value = 1;
   for (c = 0; c < _f('details').length; c++) { _f('details')[c].addEventListener('change', detailChange); }
 }
